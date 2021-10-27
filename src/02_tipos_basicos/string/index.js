@@ -1,3 +1,4 @@
+"use strict";
 (function () {
     var _a;
     var batman = 'Batman';

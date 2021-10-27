@@ -1,3 +1,4 @@
+"use strict";
 (function () {
     // Tipos
     var batman = 'Bruce';

@@ -1,5 +1,6 @@
+"use strict";
 (function () {
     var isSuperman = true;
     var isBatman = false;
-    console.log({ isBatman: isBatman }, { isBatman: isBatman });
+    console.log({ isBatman: isBatman }, { isSuperman: isSuperman });
 })();

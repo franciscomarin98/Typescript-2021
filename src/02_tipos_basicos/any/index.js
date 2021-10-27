@@ -1,3 +1,4 @@
+"use strict";
 (function () {
     var avenger;
     var exists = "hola";

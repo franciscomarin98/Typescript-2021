@@ -1,3 +1,4 @@
+"use strict";
 (function () {
     function callBatman() {
         console.log('Batiseñal activada');

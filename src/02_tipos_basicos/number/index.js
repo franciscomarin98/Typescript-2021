@@ -1,3 +1,4 @@
+"use strict";
 (function () {
     var avenger = 10;
     console.log(avenger);
