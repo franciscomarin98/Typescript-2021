@@ -1,2 +1,7 @@
-const msg: string = 'Hola mundo desde Typescript';
-console.log(msg);
+(() => {
+
+    const msg: string = 'Hola mundo desde Typescript';
+    console.log(msg);
+
+
+})();

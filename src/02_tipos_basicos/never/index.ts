@@ -1,10 +1,10 @@
 (() => {
 
-    const error = (message:string): never => {
+/*    const error = (message:string): never => {
         throw new Error(message);
     }
 
-    error('Auxilio!!');
+    error('Auxilio!!');*/
     console.log('Fin')
 
 })();
