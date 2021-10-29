@@ -32,5 +32,22 @@ var __rest = (this && this.__rest) || function (s, e) {
     var avengerArray = ['Cap. America', 'Ironman', 'Hulk'];
     var aplasta = avengerArray[2];
     console.log(aplasta);
+    var thor = {
+        name: 'Thor',
+        weapon: 'Mjolnir'
+    };
+    var cap = {
+        name: 'Cap',
+        weapon: 'Escudo'
+    };
+    var tony = {
+        name: 'Ironman',
+        weapon: 'Armorsuit'
+    };
+    var lista = [thor, cap, tony];
+    for (var _i = 0, lista_1 = lista; _i < lista_1.length; _i++) {
+        var vengador = lista_1[_i];
+        console.log(vengador);
+    }
 })();
 //# sourceMappingURL=main.js.map
