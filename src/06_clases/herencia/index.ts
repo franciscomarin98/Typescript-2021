@@ -2,14 +2,34 @@
 
     class Avenger {
         constructor(
-            public name: string,
-            public realName: string
+            public _name: string,
+            public _realName: string
         ) {
             console.log('Constructor avenger called')
         }
 
-        private getFullName(): string {
-            return `${this.name} ${this.realName}`;
+
+        get name(): string {
+            return this._name;
+        }
+
+        set name(value: string) {
+            if (value.length < 3) {
+                throw new Error('El nombre debe de contener minimo 3 letras');
+            }
+            this._name = value;
+        }
+
+        get realName(): string {
+            return this._realName;
+        }
+
+        set realName(value: string) {
+            this._realName = value;
+        }
+
+        private fullName(): string {
+            return `${this._name} ${this._realName}`;
         }
     }
 
@@ -23,11 +43,12 @@
             console.log('Constructor x-men called')
         }
 
-        getFullNameDesdeXmen() {
-            console.log(super.getFullName());
-        }
+        /*        getFullNameDesdeXmen() {
+                    console.log(super.getFullName());
+                }*/
     }
 
     const wolverine = new Xmen('Wolverine', 'Logan', true)
+    wolverine._name = 'Wolverine II';
 
 })();
