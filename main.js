@@ -20,4 +20,19 @@
         }
     };
 })();
+(function () {
+    var Mutant = (function () {
+        function Mutant() {
+            this.name = 'Wolverine';
+            this.realName = 'Logan';
+            this.age = 50;
+        }
+        Mutant.prototype.mutantPower = function (id) {
+            return this.name + " - " + this.realName;
+        };
+        return Mutant;
+    }());
+    var test = new Mutant();
+    console.log(test.mutantPower(5));
+})();
 //# sourceMappingURL=main.js.map
