@@ -40,7 +40,7 @@
             public isMutant: boolean
         ) {
             super(name, realName);
-            console.log('Constructor x-men called')
+            // console.log('Constructor x-men called')
         }
 
         /*        getFullNameDesdeXmen() {

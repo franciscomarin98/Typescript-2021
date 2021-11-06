@@ -32,8 +32,8 @@
     }
 
     const antMan: Avenger = new Avenger('AntMan', 'Team Cap', 'Scott Lang');
-    console.log(antMan);
-    console.log(antMan.bio())
-    console.log(Avenger.avengerAge())
+    // console.log(antMan);
+    // console.log(antMan.bio())
+    // console.log(Avenger.avengerAge())
 
 })();

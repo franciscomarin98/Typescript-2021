@@ -31,9 +31,6 @@ var __extends = (this && this.__extends) || (function () {
         return Avenger;
     }());
     var antMan = new Avenger('AntMan', 'Team Cap', 'Scott Lang');
-    console.log(antMan);
-    console.log(antMan.bio());
-    console.log(Avenger.avengerAge());
 })();
 (function () {
     var Avenger = (function () {
@@ -75,12 +72,48 @@ var __extends = (this && this.__extends) || (function () {
         function Xmen(name, realName, isMutant) {
             var _this = _super.call(this, name, realName) || this;
             _this.isMutant = isMutant;
-            console.log('Constructor x-men called');
             return _this;
         }
         return Xmen;
     }(Avenger));
     var wolverine = new Xmen('Wolverine', 'Logan', true);
     wolverine._name = 'Wolverine II';
+})();
+(function () {
+    var Mutante = (function () {
+        function Mutante(name, realName) {
+            this.name = name;
+            this.realName = realName;
+        }
+        return Mutante;
+    }());
+    var Xmen = (function (_super) {
+        __extends(Xmen, _super);
+        function Xmen() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        Xmen.prototype.salvarMundo = function () {
+            return 'Mundo a salvo!';
+        };
+        return Xmen;
+    }(Mutante));
+    var Villian = (function (_super) {
+        __extends(Villian, _super);
+        function Villian() {
+            return _super !== null && _super.apply(this, arguments) || this;
+        }
+        Villian.prototype.conquistarMundo = function () {
+            return 'Mundo conquistado';
+        };
+        return Villian;
+    }(Mutante));
+    var wolverine = new Xmen('Wolverine', 'Logan');
+    var magneto = new Villian('Magneto', 'Magnus');
+    console.log(wolverine.salvarMundo());
+    console.log(magneto.conquistarMundo());
+    var printName = function (character) {
+        console.log(character.name);
+    };
+    printName(wolverine);
 })();
 //# sourceMappingURL=main.js.map
