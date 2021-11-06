@@ -24,14 +24,14 @@
 
     const wolverine = new Xmen('Wolverine', 'Logan');
     const magneto = new Villian('Magneto', 'Magnus');
-    console.log(wolverine.salvarMundo());
-    console.log(magneto.conquistarMundo());
+    // console.log(wolverine.salvarMundo());
+    // console.log(magneto.conquistarMundo());
 
     const printName = (character: Mutante) => {
         console.log(character.name);
     }
 
-    printName(wolverine);
+    // printName(wolverine);
 
 
 })();

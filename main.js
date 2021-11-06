@@ -109,11 +109,24 @@ var __extends = (this && this.__extends) || (function () {
     }(Mutante));
     var wolverine = new Xmen('Wolverine', 'Logan');
     var magneto = new Villian('Magneto', 'Magnus');
-    console.log(wolverine.salvarMundo());
-    console.log(magneto.conquistarMundo());
     var printName = function (character) {
         console.log(character.name);
     };
-    printName(wolverine);
+})();
+(function () {
+    var Apocalipsis = (function () {
+        function Apocalipsis(name) {
+            this.name = name;
+        }
+        Apocalipsis.callApocalipsis = function () {
+            if (!Apocalipsis._instance) {
+                Apocalipsis._instance = new Apocalipsis('Soy único');
+            }
+            return Apocalipsis._instance;
+        };
+        return Apocalipsis;
+    }());
+    var apocalipsis = Apocalipsis.callApocalipsis();
+    console.log(apocalipsis);
 })();
 //# sourceMappingURL=main.js.map
