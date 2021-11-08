@@ -6,4 +6,5 @@ var Validations;
     };
 })(Validations || (Validations = {}));
 console.log(Validations.validateText('Fra'));
+console.log('Hola Mundo!');
 //# sourceMappingURL=main.js.map
