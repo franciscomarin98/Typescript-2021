@@ -12,3 +12,4 @@ getPokemon(4)
 import {PokemonClass} from "./decorators/pokemon-class";
 
 const charmander = new PokemonClass('Charmander');
+(PokemonClass.prototype as any).customName = 'Pikachu';
